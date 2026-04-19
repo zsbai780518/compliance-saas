@@ -1,0 +1,46 @@
+# Git 忽略文件
+
+# 依赖
+/vendor/
+/node_modules/
+
+# 运行时
+/runtime/*
+!/runtime/.gitignore
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# 日志
+*.log
+logs/
+
+# 缓存
+*.cache
+.cache/
+
+# 环境配置
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+temp/
+
+# 导出文件
+runtime/exports/*
+
+# 敏感信息
+config/database.local.php
